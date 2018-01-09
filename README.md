@@ -39,7 +39,7 @@ There are several add-on services available to extend the functionality of Bitco
 
 - [Insight API](https://github.com/bitcoinnano/insight-api-btcnano)
 - [Insight UI](https://github.com/bitcoinnano/insight-ui-btcnano)
-- [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service)
+- [Btcnano Wallet Service](https://github.com/bitpay/bitcore-wallet-service)
 
 ## Documentation
 
