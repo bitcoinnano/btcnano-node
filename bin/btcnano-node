@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var btcnano = require('../lib/cli/bitcore');
+btcnano();
