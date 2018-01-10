@@ -12,8 +12,8 @@ tag="v0.15.0.2.1"
 if [ "${platform}" == "linux" ]; then
     if [ "${arch}" == "x86_64" ]; then
         tarball_name="btcnano_elf1.9.tgz"
-    elif [ "${arch}" == "x86_32" ]; then
-        tarball_name="btcnano_elf1.9.tgz"
+    # elif [ "${arch}" == "x86_32" ]; then
+    #     tarball_name="btcnano_elf1.9.tgz"
     fi
 elif [ "${platform}" == "darwin" ]; then
     tarball_name="btcnano_elf1.9.tgz"
@@ -48,10 +48,10 @@ download_bitcoind() {
             wget $shasums_url
         fi
         if test -e "${tarball_name}"; then
-            echo "Unpacking bitcoin distribution"
+            echo "Unpacking btcnano distribution"
             tar -xvzf $tarball_name
             if test $? -eq 0; then
-                ln -sf "bitcoin-${version}/bin/bitcoind"
+                ln -sf "btcnano-${version}/bin/btcnanod"
                 return;
             fi
         fi
