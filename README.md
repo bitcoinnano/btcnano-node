@@ -22,7 +22,7 @@ Note: For your convenience, we distribute btcnanod binaries for x86_64 Linux and
 
 ## Configuration
 
-Bitcore includes a Command Line Interface (CLI) for managing, configuring and interfacing with your Bitcore Node.
+Btcnano includes a Command Line Interface (CLI) for managing, configuring and interfacing with your Bitcore Node.
 
 ```bash
 btcnano-node create -d <btcnano-data-dir> mynode
@@ -39,7 +39,7 @@ There are several add-on services available to extend the functionality of Bitco
 
 - [Insight API](https://github.com/bitcoinnano/insight-api-btcnano)
 - [Insight UI](https://github.com/bitcoinnano/insight-ui-btcnano)
-- [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service)
+- [Btcnano Wallet Service](https://github.com/bitpay/bitcore-wallet-service)
 
 ## Documentation
 
