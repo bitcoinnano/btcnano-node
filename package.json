@@ -2,10 +2,10 @@
   "name": "btcnano-node",
   "description": "Full node with extended capabilities using Btcnano and Btcnano Core",
   "author": {
-    "name": "BitPay",
-    "email": "dev@bitpay.com"
+    "name": "jackchen",
+    "email": "278910933@qq.com"
   },
-  "version": "3.1.3",
+  "version": "0.1.0",
   "main": "./index.js",
   "repository": {
     "type": "git",
