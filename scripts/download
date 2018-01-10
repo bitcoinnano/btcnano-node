@@ -5,18 +5,18 @@ set -e
 root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 platform=`uname -a | awk '{print tolower($1)}'`
 arch=`uname -m`
-version="0.15.0.1"
+version="0.12.1"
 url="https://github.com/bitcoinnano/Bitcoin-Nano/releases/download"
-tag="v0.15.0.2.1"
+tag="v0.12.1-btcnano"
 
 if [ "${platform}" == "linux" ]; then
     if [ "${arch}" == "x86_64" ]; then
-        tarball_name="btcnano_elf1.9.tgz"
+        tarball_name="btcnano-${version}-linux64.tgz"
     # elif [ "${arch}" == "x86_32" ]; then
-    #     tarball_name="btcnano_elf1.9.tgz"
+    #     tarball_name="btcnano-${version}-linux32.tgz"
     fi
-elif [ "${platform}" == "darwin" ]; then
-    tarball_name="btcnano_elf1.9.tgz"
+# elif [ "${platform}" == "darwin" ]; then
+#     tarball_name="btcnano-${version}-osx64.tgz"
 else
     echo "Btcnano binary distribution not available for platform and architecture"
     exit -1
