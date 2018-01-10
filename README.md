@@ -10,7 +10,7 @@ npm install -g btcnano-node
 btcnano-node start
 ```
 
-Note: For your convenience, we distribute bitcoind binaries for x86_64 Linux and x86_64 Mac OS X. Upon npm install, the binaries for your platform will be downloaded. For more detailed installation instructions, or if you want to compile the project yourself, then please see the Bitcore branch of [Btcnano Core with additional indexing](https://github.com/bitcoinnano/Bitcoin-Nano).
+Note: For your convenience, we distribute btcnanod binaries for x86_64 Linux and x86_64 Mac OS X. Upon npm install, the binaries for your platform will be downloaded. For more detailed installation instructions, or if you want to compile the project yourself, then please see the Btcnano branch of [Btcnano Core with additional indexing](https://github.com/bitcoinnano/Bitcoin-Nano).
 
 ## Prerequisites
 
