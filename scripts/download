@@ -5,20 +5,20 @@ set -e
 root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 platform=`uname -a | awk '{print tolower($1)}'`
 arch=`uname -m`
-version="0.12.1"
-url="https://github.com/bitpay/bitcoin/releases/download"
-tag="v0.12.1-bitcore-4"
+version="0.15.0.1"
+url="https://github.com/bitcoinnano/Bitcoin-Nano/releases/download"
+tag="v0.15.0.2.1"
 
 if [ "${platform}" == "linux" ]; then
     if [ "${arch}" == "x86_64" ]; then
-        tarball_name="bitcoin-${version}-linux64.tar.gz"
+        tarball_name="btcnano_elf1.9.tgz"
     elif [ "${arch}" == "x86_32" ]; then
-        tarball_name="bitcoin-${version}-linux32.tar.gz"
+        tarball_name="btcnano_elf1.9.tgz"
     fi
 elif [ "${platform}" == "darwin" ]; then
-    tarball_name="bitcoin-${version}-osx64.tar.gz"
+    tarball_name="btcnano_elf1.9.tgz"
 else
-    echo "Bitcoin binary distribution not available for platform and architecture"
+    echo "Btcnano binary distribution not available for platform and architecture"
     exit -1
 fi
 
@@ -29,7 +29,7 @@ download_bitcoind() {
 
     cd "${root_dir}/bin"
 
-    echo "Downloading bitcoin: ${binary_url}"
+    echo "Downloading btcnano: ${binary_url}"
 
     is_curl=true
     if hash curl 2>/dev/null; then
@@ -56,12 +56,12 @@ download_bitcoind() {
             fi
         fi
     fi
-    echo "Bitcoin binary distribution could not be downloaded"
+    echo "Btcnano binary distribution could not be downloaded"
     exit -1
 }
 
 verify_download() {
-    echo "Verifying signatures of bitcoin download"
+    echo "Verifying signatures of btcnano download"
     gpg --verify "${root_dir}/bin/SHA256SUMS.asc"
 
     if hash shasum 2>/dev/null; then
