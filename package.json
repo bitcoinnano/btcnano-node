@@ -5,7 +5,7 @@
     "name": "jackchen",
     "email": "278910933@qq.com"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./index.js",
   "repository": {
     "type": "git",
@@ -79,7 +79,7 @@
   },
   "devDependencies": {
     "benchmark": "1.0.0",
-    "btcnano-p2p": "^1.1.0",
+    "btcnano-p2p": "^0.1.0",
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.3",
